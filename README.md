@@ -1,4 +1,4 @@
-# HTML-CSS-Projects
+# HTML and CSS Projects
 Hi everyone, I'm Adrian Baraza Martinez.
 
 Here you have some HTML and CSS projects I've done.
