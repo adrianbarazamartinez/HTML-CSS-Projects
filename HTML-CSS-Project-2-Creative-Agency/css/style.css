@@ -1,0 +1,364 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*Proyecto 3*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color-blue: #515DEF;
+  --color-black: #333333;
+  --color-grey: #909090;
+  --color-white: #FBFBFB;
+  --font-primary: "Poppins", sans-serif;
+  --font-size-big: 60px;
+  --font-size-medium: 20px;
+  --font-size-small: 16px;
+}
+
+
+body {
+  background-color: var(--color-blue);
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/hero@2x.jpg);
+  background-position: top right;
+  background-size: 41% 100vh;
+  background-repeat: no-repeat;
+}
+
+div.page {
+  font-family: var(--font-primary);
+  padding:40px 120px;
+}
+
+.page header {
+  display: flex;
+  align-items: center;
+  gap:140px;
+  margin-bottom: 90px;
+}
+
+.page header nav {
+  display: block;
+  width: 100%;
+}
+.page header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+} 
+
+.page header ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: var(--font-size-small);
+}
+
+.page header nav ul li:last-child {
+  margin-left: auto;
+}
+
+.page header nav ul li:last-child a {
+  background-color: var(--color-blue);
+  padding: 15px 20px;
+}
+
+.page section.hero {
+  width: 55%;
+  color: var(--color-white);
+}
+
+.hero p {
+  font-size: var(--font-size-medium);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.hero p:last-of-type {
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: var(--font-size-big);
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero a{
+  background-color: var(--color-white);
+  padding: 20px 15px;
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: var(--font-size-medium);
+}
+
+section.categories {
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+  padding: 60px;
+  gap: 60px;
+  padding-left: 140px;
+}
+
+.categories article h3, p {
+  font-size: var(--font-size-small);
+}

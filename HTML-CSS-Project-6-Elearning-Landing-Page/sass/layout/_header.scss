@@ -1,0 +1,15 @@
+header.header {
+    padding-top: 16px;
+    padding-bottom: 26px;
+
+    @include breakpoint(tablethorizontal){
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,436 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Belgrano&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/*Proyecto 5*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/logo-background.svg), linear-gradient(to right, #ffffff 55%, #2E2F38 55%);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+div.nft {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 10px;
+  font-family: "Poppins", system-ui;
+  font-size: 16px;
+  color: #2E2F38;
+}
+
+a {
+  text-decoration: none;
+  color: #2E2F38;
+}
+
+a.btn {
+  display: block;
+  padding: 8px 30px;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #FA504D;
+  font-weight: 600;
+}
+
+.nft__header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.nft__header__nav {
+  margin-left: 100px;
+}
+.nft__header__nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 70px;
+}
+.nft__header__nav a {
+  text-decoration: none;
+  color: #2E2F38;
+  font-size: 16px;
+}
+.nft__header__login {
+  margin-left: auto;
+}
+.nft__header__login ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 40px;
+  margin-left: 30px;
+}
+.nft__header__login a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.nft__main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 0.8fr;
+}
+.nft__main__hero {
+  grid-area: 1/1/span 1/span 1;
+}
+.nft__main__features {
+  grid-area: 2/1/span 1/span 1;
+}
+.nft__main__artwork {
+  grid-area: 1/2/span 2/span 1;
+}
+
+.nft__main__hero {
+  padding-right: 40px;
+}
+.nft__main__hero h1 {
+  position: relative;
+  font-size: 66px;
+  font-family: "Belgrano", serif;
+  font-weight: 500;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+.nft__main__hero p {
+  font-size: 20px;
+  color: #8E8E8E;
+  padding-bottom: 30px;
+}
+.nft__main__hero div {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nft__main__hero div a.btn {
+  padding: 15px 70px;
+}
+.nft__main__hero div a:last-child {
+  text-decoration: underline;
+}
+
+.nft__main__features h2 {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  font-size: 28px;
+  font-family: "Belgrano", serif;
+  font-weight: 500;
+}
+.nft__main__features figure {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nft__main__features img {
+  padding: 5px;
+  border: 1px solid #8E8E8E;
+}
+
+.nft__art1 {
+  position: relative;
+}
+.nft__art1 img {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  z-index: -1;
+}
+
+div.nft__main__artwork__personal-data {
+  margin-top: 430px;
+  padding: 20px;
+  background-color: white;
+}
+div.nft__main__artwork__personal-data header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2E2F38;
+}
+div.nft__main__artwork__personal-data header div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+div.nft__main__artwork__personal-data header div p:first-child {
+  color: #8E8E8E;
+}
+div.nft__main__artwork__personal-data header div p:last-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+div.nft__main__artwork__personal-data header div.personal-info {
+  margin-left: 20px;
+}
+div.nft__main__artwork__personal-data header div.current-bid {
+  margin-left: auto;
+}
+div.nft__main__artwork__personal-data div.nft__main__artwork__personal-data__buttons {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+}
+div.nft__main__artwork__personal-data div.nft__main__artwork__personal-data__buttons a {
+  text-align: center;
+  width: 50%;
+}
+div.nft__main__artwork__personal-data div.nft__main__artwork__personal-data__buttons a:last-child {
+  background-color: #ffffff;
+  color: #FA504D;
+}
+
+.nft__main__artwork__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  padding-top: 40px;
+}
+.nft__main__artwork__data a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 16px;
+}
+.nft__main__artwork__data span {
+  font-size: 28px;
+  font-weight: 600;
+  color: #FA504D;
+  margin-right: 10px;
+}
+
+h1.hero_title::before {
+  content: url(../img/lapiz-redondeo.svg);
+  position: absolute;
+  top: -5px;
+  left: 115px;
+}
+
+p.hero_subtitle::before {
+  content: url(../img/line.svg);
+  position: absolute;
+  top: 430px;
+  left: 220px;
+}/*# sourceMappingURL=style.css.map */

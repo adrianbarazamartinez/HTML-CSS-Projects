@@ -1,0 +1,6 @@
+.btn {
+    @include button();
+    &:hover{
+     background-color: #6d3b2d;
+    }
+}

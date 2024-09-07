@@ -1,0 +1,100 @@
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin HeadingXL()  {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 70px;
+}
+
+@mixin HeadingL()  {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 51px;
+}
+
+@mixin HeadingM()  {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@mixin HeadingS()  {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin BodyM()  {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin BodyS()  {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@mixin header-button {
+  @include BodyS();
+  background-color: $blue-purple;
+  color: $white;
+  padding: 12px 30px; 
+  border-radius: 28px;
+}
+
+@mixin main-button {
+  @include BodyS();
+  background-image: $gradient-orange-pink;
+  color: $white;
+  padding: 12px 30px;
+  border-radius: 28px
+}
+
+@mixin footer-button {
+  @include BodyS();
+  background-image: $gradient-blue-pink;
+  color: $white;
+  padding: 12px 30px; 
+  border-radius: 28px;
+}
+
+@mixin icon {
+  background-image:$gradient-orange-pink;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin link {
+  @include BodyS();
+  color: $pink;
+}

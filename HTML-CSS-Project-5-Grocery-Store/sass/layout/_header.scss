@@ -1,0 +1,65 @@
+.header {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__nav {
+        a{
+            color: $grey;
+        }
+        ul{
+            gap: 50px;
+        }
+
+        a.active, a:hover{
+            color: $orange;
+            position: relative;
+            &::before {
+                content: '';
+                width: 80%;
+                height: 2px;
+                background-color: $orange;
+                position: absolute;
+                top: 27px;
+                left: 10%;
+            }
+        }
+    
+    }
+
+    &__login {
+        ul{
+            gap: 50px;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+        a.btn-orange {
+            color: $orange;
+            text-decoration: underline;
+            &:hover{
+                color: #6d3b2d;
+               }
+        }
+
+        a.bag{
+            position: relative;
+            &::before{
+                content: '';
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $orange;
+                position: absolute;
+                right: -3px;
+                top: -3px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,11 @@
+footer.footer {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    background-color: $blue-purple;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

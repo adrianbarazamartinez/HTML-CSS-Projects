@@ -1,0 +1,20 @@
+.header__button {
+    @include header-button();
+    &:hover{
+        background-color: #666CA3;
+    }
+}
+
+.main__button {
+    @include main-button();
+    &:hover{
+        opacity:0.5;
+    }
+}
+.footer__button {
+    @include footer-button();
+    &:hover{
+        background-image: linear-gradient(#ffffff67 100%,#ffffff67 100% 100%),$gradient-blue-pink;
+    }
+    
+}

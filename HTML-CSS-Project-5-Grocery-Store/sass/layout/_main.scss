@@ -1,0 +1,105 @@
+.main {
+    &__hero {
+        width: 80%;
+        display: flex;
+
+        &__data{
+            padding-top: 100px;
+            h1{
+                line-height: 85px;
+                padding-bottom: 30px;
+                span{
+                    color: $orange;
+                }
+            }
+            p {
+                color: $grey;
+                font-size: $font-size-medium;
+                width: 70%;
+                padding-bottom: 40px;
+            }
+
+            &__search {
+                display: flex;
+                justify-content: stretch;
+                width: 57%;
+                padding-bottom: 30px;
+
+                input{
+                    border: 0;
+                    border-top-left-radius:5px;
+                    border-bottom-left-radius:5px;
+                    background-color: #d0d0d250;
+                    flex-grow: 1;
+                    padding: 20px;
+                    &::placeholder{
+                        color: #949494;
+                        font-family: $font-text;
+                        font-size: $font-size-small;
+                    
+                    }
+                }
+                button {
+                    border-radius: 0;
+                    border: 0;
+                    border-top-right-radius:5px;
+                    border-bottom-right-radius:5px;
+                    width: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            &__info {
+                width: 50%;
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li{
+                        color:$grey;
+                        padding: 7px 30px;
+                        padding-right: 20px;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(../img/check.svg);
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            position: absolute;
+                            left: 2px;
+                            top:7px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &__img{
+            position: relative;
+            left: -7%;
+            img{
+                max-width:140%;
+            }
+        }
+    }
+
+    &__categories {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__category {
+            p{
+                padding-top: 10px;
+                color: $grey;
+
+            }
+        }
+    }
+}
